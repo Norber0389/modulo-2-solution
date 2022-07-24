@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color:steelblue;
+}
+
+h1 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 50px;
+}
+
+.boxj,
+.boxm,
+.boxi {
+    float: left;
+    padding: 12px;
+}
+  
+.cont {
+    background-color:dimgrey;
+    border: 1px black solid;
+    padding: 20px;
+}
+  
+.japan {
+    background-color: hsl(352, 100%, 50%);
+    color: black;
+    text-align: center;
+    border: 1px black solid;
+    margin-top: 0px;
+    padding-top: 5px;
+    float: right;
+    width: 120px;
+    height: 30px;
+}
+  
+.mexican {
+    background-color: #f2ff00;
+    color: black;
+    text-align: center;
+    border: 1px black solid;
+    margin-top: 0px;
+    padding-top: 5px;
+    float: right;
+    width: 120px;
+    height: 30px;
+}
+  
+.italian {
+    background-color: #00ff2f;
+    color: black;
+    text-align: center;
+    border: 1px solid #000;
+    margin-top: 0px;
+    padding-top: 5px;
+    float: right;
+    width: 120px;
+    height: 30px;
+}
+  
+@media only screen and (min-width: 992px) {
+  .boxj,
+  .boxm,
+  .boxi {
+    display: inline-block;
+    width: 33%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .boxj,
+  .boxm,
+  .boxi {
+    display: inline-block;
+  }
+  .boxj,
+  .boxm {
+    width: 50%;
+  }
+  .boxi {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .boxj,
+  .boxm,
+  .boxi {
+    display: inline-block;
+    width: 100%;
+  }
+}
